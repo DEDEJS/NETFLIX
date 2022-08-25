@@ -11,15 +11,19 @@ body{
 }
 main{
     height: 800px;
-    background: url("../imgs/TelaDeFundo.jpg") center ;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
-main h1{
+.index{
+    background: url("../imgs/TelaDeFundo.jpg") center ;
+}
+.login{
+    background: url("../imgs/TeleDeFundoLogin.jpg") center !important;
+  }
+main .main-child h1{
     color:white;
     font-size: 60px;
     max-width: 660px;
@@ -96,6 +100,7 @@ main .main-child{
     background-color: rgb(34, 34, 34);
     padding: 0.2%;
 }
+
 nav{
     margin-top: 2%;
     position: absolute;
@@ -109,9 +114,12 @@ nav li:nth-last-child(2) , nav li:nth-last-child(1){
      float: right;
      margin-right:4%;
 }
+.NavLogin{
+    float: left !important;
+}
 nav h1{
     color:#e50914;
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 25%;
 }
 nav select{
@@ -223,8 +231,8 @@ section .perfilcriancas p{
     font-size: 21px;
     margin-top: 1%;
 }
-.SectionPerguntas{
-    padding-bottom:15%;
+.SectionPerguntas section{
+    padding-bottom:19%;
    
 }
 section .perguntas {
@@ -232,44 +240,102 @@ section .perguntas {
      margin-left: 36%;
      font-size: 35px;
 }
+section .perguntas h1{
+    margin-top: 6%;
+    margin-left: -5%;
+    margin-bottom: 2.5%;
+   
+}
 section .perguntas .perguntasbotoes{
     display:inline-block;
     margin-top: 3%;
 }
 section .perguntas .perguntasbotoes button{
-    width:80%;
+    width:84.2%;
     text-align: left;
-    margin-left: -15%;
-    padding: 2%;
-    margin-bottom: 1%;
-    background-color: rgba(146, 146, 146, 0.4);
+    margin-left: -20%;
+    padding: 2.2%;
+    margin-bottom: 0.8%;
+    background-color: #303030;
     color:white;
-    font-size: 19px;
+    font-size: 26px;
     cursor: pointer;
+    border: 0;
+}
+section .perguntas .perguntasbotoes button p{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: -3%;
+    font-size: 65px
+    
+}
+section .perguntas .perguntasbotoes .Repostas {
+background-color:rgba(146, 146, 146, 0.4) ;
+padding: 2%;
+margin-left: -20.9%;
+margin-top: -0.2%;
+width:79.7%;
+margin-bottom: 1%;
+display: none;
+}
+section .perguntas .perguntasbotoes .Repostas h2{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 2%;
+}
+section .perguntas form {
+    margin-top: 5%;
+    margin-left: -5%;
+    margin-bottom: 2%;
 }
 section .perguntas form p{
    font-size: 17px;
-   margin-top: 5%;
+  margin-left: -7%;
+  width:90%;
+  font-weight:400;
 } 
-section .perguntas form{
-    margin-left: -5%;
+
+section .perguntas form span{
+ font-size: 16px;
+ color:#8c8c8c;
+ position: absolute; 
+ margin-left: -32.5%;
+ margin-top: 2.5%;
 }
 section .perguntas form input[type=email]{
-  padding: 2%;
-  width:50%;
-  margin-left: -2%;
-  margin-top: 1%;
+  padding: 2.4%;
+  width:44.8%;
+  margin-left: -10.3%;
+  margin-top: 1.4%;
 }
-section .perguntas label button{
+section .perguntas  h3{
+    position: absolute;
     background-color: #e50914;
+    font-size:30px;
+    font-weight: 200;
     text-align: center;
     color:white;
-    font-size:25px;
     border: 1px solid black;
     cursor: pointer;
-    margin-left: -1%;
-    margin-top: 1%;
-    padding:1.5%;
+    margin-left: 26.7%;
+    margin-top: -4.6%;
+    padding:17.3px;
+    width: 12%;
+   
+}/*
+section .perguntas h3 svg{
+    fill: #fff;
+    height: 100%;
+    left: 0;
+    margin: 1px 0;
+    position: absolute;
+    top: 0;
+    transform: scaleX(1);
+    color:white;
+}*/
+.LoginFooter{
+    background-color: rgba(0,0,0,.75);
+
 }
 footer{
     position:relative;
